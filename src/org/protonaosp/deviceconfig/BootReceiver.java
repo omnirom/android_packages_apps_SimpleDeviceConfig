@@ -54,6 +54,7 @@ public class BootReceiver extends BroadcastReceiver {
                 value = kv[1];
             }
 
+            Log.d(TAG, "setProperty " + namespace + " / " + key + " = " + value);
             DeviceConfig.setProperty(namespace, key, value, true);
         }
     }
